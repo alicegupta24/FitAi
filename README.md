@@ -1,33 +1,48 @@
-# AI-Based Virtual Shopping Assistant
+# FitAI - AI-Based Virtual Shopping Assistant 👗🤖
 
-This project is a Streamlit-based web application that uses AI to analyze a person's body shape and skin tone from a photo, and provides personalized clothing recommendations based on the analysis.
----
-## Features
+FitAI is a virtual shopping assistant built with Python and Streamlit that uses Artificial Intelligence (AI) to recommend clothing based on a user's body shape, skin tone, and gender. Just upload a photo, and FitAI does the rest!
 
-- Upload a selfie or full-body photo
-- Body shape detection using pose estimation
-- Skin tone analysis from facial region
-- Neural Network and Random Forest-based predictions
-- Fashion recommendations tailored by gender, body type, and tone
-- Saves analyses in a local database
----
-## Technologies Used
+##  Features
+
+- 🔍 **Pose Detection** using MediaPipe
+- 🧠 **Body Shape Classification** using Neural Network & Random Forest
+- 👤 **Gender Prediction** using a CNN (VGG16-based)
+- 🎨 **Skin Tone Analysis** using facial region color analysis
+- 👕 **AI-based Clothing Recommendations**
+- 🛒 **Google Shopping Integration**
+- 💾 **User Data Storage** with SQLite
+- 📈 **Synthetic Data Generation** for model training
+- 🧪 Train & load models automatically if not available
+
+##  Tech Stack
 
 - Python
-- OpenCV
-- MediaPipe
-- TensorFlow / Keras
 - Streamlit
-- SQLite (for local storage)
-- Scikit-learn
-- Pillow
-- Joblib
----
-## Installation
+- TensorFlow (Neural Networks)
+- scikit-learn (Random Forest, Label Encoding)
+- MediaPipe (Pose Estimation, Face Mesh)
+- OpenCV (Face Detection)
+- SQLite (User history storage)
+- VGG16 CNN (Gender prediction)
 
-Make sure you have Python installed (preferably 3.8 or higher).
+## Model Files
 
-Install all required packages by running:
+- `body_shape_nn_model.h5` – Neural network for body shape
+- `body_shape_rf_model.pkl` – Random forest for body shape
+- `clothing_recommendation_model.pkl` – Clothing suggestion model
+- `gender_model.h5` – Gender prediction model
 
-```bash
-pip install streamlit opencv-python mediapipe tensorflow scikit-learn pillow joblib
+##  How It Works
+
+1. Upload your image (selfie or full-body).
+2. AI detects your gender, body shape, and skin tone.
+3. Based on analysis, FitAI suggests personalized clothing.
+4. Click shopping links to buy recommended outfits!
+
+##  User History
+
+- See previously analyzed results using the "User History" tab.
+
+##  Developed By
+
+Aesthetic Era✨
